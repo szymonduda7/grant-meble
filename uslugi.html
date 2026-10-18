@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Usługi | GRANT-MEBLE Tomasz Maksim, meble na zamówienie</title>
+<meta name="description" content="Meble kuchenne, łazienkowe, szafy i garderoby, meble biurowe oraz meble z drewna naturalnego na zamówienie. Pomiar, projekt, wykonanie i montaż. GRANT-MEBLE, Malinie 53, tel. 781 261 764.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.js"></script>
+<link rel="stylesheet" href="styles.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          las: '#1c2f28',
+          'las-raised': '#24392f',
+          stone: '#e8eae5',
+          'stone-raised': '#f6f7f4',
+          ink: '#16201b',
+          'ink-soft': '#4b5650',
+          brass: '#c0913f',
+          'brass-dark': '#7a5720',
+          'brass-light': '#d9b46e',
+          mist: '#b9c4bc',
+        },
+        fontFamily: {
+          sans: ['"Hanken Grotesk"', 'sans-serif'],
+          display: ['"Archivo"', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+</head>
+<body class="bg-stone text-ink">
+
+<!-- ============ HEADER ============ -->
+<header id="site-header" class="site-header fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 md:px-8 h-16 md:h-20 flex items-center justify-between gap-4">
+    <a href="index.html" class="focus-ring rounded-md font-display font-extrabold text-base sm:text-lg md:text-xl tracking-tight leading-none whitespace-nowrap">
+      GRANT-MEBLE
+    </a>
+    <nav class="hidden md:flex items-center gap-8 text-[0.95rem] font-medium" aria-label="Główna nawigacja">
+      <a href="uslugi.html" class="nav-link focus-ring" aria-current="page">Usługi</a>
+      <a href="index.html#realizacje" class="nav-link focus-ring">Realizacje</a>
+      <a href="index.html#opinie" class="nav-link focus-ring">Opinie</a>
+      <a href="index.html#kontakt" class="nav-link focus-ring">Kontakt</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:781261764" class="btn btn-dark px-5 py-2.5 text-sm">
+        <i data-lucide="phone" class="w-4 h-4"></i>
+        <span class="hidden sm:inline">781 261 764</span><span class="sm:hidden">Zadzwoń</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden btn btn-outline w-11 h-11 !p-0" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </div>
+  </div>
+  <nav id="mobile-menu" class="mobile-menu md:hidden absolute left-0 right-0 top-full bg-stone-raised border-b border-black/10 px-5 py-4" aria-label="Menu mobilne">
+    <ul class="flex flex-col text-lg font-semibold">
+      <li><a href="uslugi.html" class="block py-3 border-b border-black/5 text-brass-dark">Usługi</a></li>
+      <li><a href="index.html#realizacje" class="block py-3 border-b border-black/5">Realizacje</a></li>
+      <li><a href="index.html#opinie" class="block py-3 border-b border-black/5">Opinie</a></li>
+      <li><a href="index.html#kontakt" class="block py-3">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- ============ PAGE HERO ============ -->
+<section class="relative overflow-hidden pt-28 md:pt-36 pb-12 md:pb-14 px-5 md:px-8">
+  <div class="grain"></div>
+  <div class="relative max-w-7xl mx-auto">
+    <nav class="text-sm text-ink-soft mb-6" aria-label="Okruszki">
+      <a href="index.html" class="nav-link focus-ring">Strona główna</a>
+      <span class="mx-2 text-ink-soft/60">/</span>
+      <span class="text-ink font-medium">Usługi</span>
+    </nav>
+    <h1 class="heading-xl max-w-5xl">Meble na zamówienie <span class="text-brass-dark">do całego domu</span></h1>
+    <p class="mt-7 text-lg md:text-xl text-ink-soft max-w-2xl">
+      Kuchnia, łazienka, sypialnia czy gabinet: zawsze zaczynamy od pomiaru u Ciebie, a kończymy na montażu i regulacji ostatniego frontu.
+    </p>
+    <ul class="mt-9 flex gap-2 overflow-x-auto pb-2 -mx-5 px-5 md:mx-0 md:px-0 md:flex-wrap" aria-label="Przejdź do usługi">
+      <li><a href="#kuchnie" class="chip-link inline-block">Meble kuchenne</a></li>
+      <li><a href="#lazienki" class="chip-link inline-block">Meble łazienkowe</a></li>
+      <li><a href="#szafy" class="chip-link inline-block">Szafy i garderoby</a></li>
+      <li><a href="#biuro" class="chip-link inline-block">Meble biurowe</a></li>
+      <li><a href="#drewno" class="chip-link inline-block">Drewno naturalne</a></li>
+      <li><a href="#montaz" class="chip-link inline-block">Projekt i montaż</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SERVICE CARDS ============ -->
+<section class="pb-20 md:pb-28 px-5 md:px-8">
+  <div class="max-w-7xl mx-auto grid gap-6 md:gap-8">
+
+    <article id="kuchnie" class="surface rounded-3xl overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="relative lg:min-h-[480px]"><div class="grid grid-cols-2 gap-1.5 bg-las lg:absolute lg:inset-0 lg:grid-rows-[1.5fr_1fr]">
+        <img src="images/2.webp" alt="Kuchnia w dekorze dębu z wyspą i czarnym blatem" class="w-full h-full min-h-0 object-cover col-span-2 aspect-[16/9] lg:aspect-auto" loading="lazy">
+        <img src="images/19.webp" alt="Kuchnia z frontami w kolorze szałwii" class="w-full h-full min-h-0 object-cover aspect-[4/3] lg:aspect-auto" loading="lazy">
+        <img src="images/22.webp" alt="Biała kuchnia z frontami ramowymi" class="w-full h-full min-h-0 object-cover aspect-[4/3] lg:aspect-auto" loading="lazy">
+      </div></div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="cooking-pot" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble kuchenne</h2>
+        <p class="mt-4 text-ink-soft text-lg">Kuchnia to mebel, z którego korzystasz najczęściej, więc układamy ją pod Twoje nawyki: gdzie odkładasz zakupy, gdzie kroisz, gdzie stoi czajnik.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Zabudowy proste, narożne i w literę U</li>
+          <li>Wyspy, półwyspy i bary</li>
+          <li>Sprzęt AGD w zabudowie</li>
+          <li>Podświetlenie LED blatu i witryn</li>
+          <li>Fronty gładkie, ramowe i bez uchwytów</li>
+          <li>Kuchnie pod skosami poddasza</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o kuchnię
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article id="lazienki" class="surface rounded-3xl overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col order-2 lg:order-1">
+        <span class="icon-chip"><i data-lucide="bath" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble łazienkowe</h2>
+        <p class="mt-4 text-ink-soft text-lg">W łazience liczy się każdy centymetr i odporność na wilgoć. Szafki dopasowujemy do umywalek, stelaży i płytek, które już masz.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Szafki pod umywalkę i pod blat</li>
+          <li>Zestawy z dwiema umywalkami</li>
+          <li>Słupki i szafki wiszące</li>
+          <li>Zabudowa stelaża WC</li>
+          <li>Wnęki z podświetleniem</li>
+          <li>Fronty ryflowane i matowe</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o łazienkę
+          </a>
+        </div>
+      </div>
+      <div class="relative lg:min-h-[480px] order-1 lg:order-2"><div class="grid grid-cols-2 gap-1.5 bg-las lg:absolute lg:inset-0">
+        <img src="images/7.webp" alt="Łazienkowa szafka z dwiema umywalkami" class="w-full h-full min-h-0 object-cover aspect-[3/4] lg:aspect-auto" loading="lazy">
+        <div class="grid grid-rows-2 gap-1.5 min-h-0">
+          <img src="images/8.webp" alt="Czarna szafka łazienkowa z kamiennym blatem" class="w-full h-full min-h-0 object-cover" loading="lazy">
+          <img src="images/11.webp" alt="Zabudowa stelaża WC z podświetlaną wnęką" class="w-full h-full min-h-0 object-cover" loading="lazy">
+        </div>
+      </div></div>
+    </article>
+
+    <article id="szafy" class="surface rounded-3xl overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="bg-las relative lg:min-h-[480px]">
+        <img src="images/6.webp" alt="Biała szafa wnękowa z toaletką i otwartą garderobą" class="w-full h-full object-cover aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0" style="object-position: 50% 40%" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="shirt" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Szafy i garderoby</h2>
+        <p class="mt-4 text-ink-soft text-lg">Szafa zrobiona na wymiar wykorzystuje całą wnękę, od podłogi po sufit. Środek planujemy razem z Tobą: drążki, szuflady, półki na buty.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Szafy wnękowe i wolnostojące</li>
+          <li>Garderoby z otwartymi półkami</li>
+          <li>Zabudowy z toaletką</li>
+          <li>Szuflady, kosze i drążki</li>
+          <li>Zabudowy przedpokoju</li>
+          <li>Szafy pod skosy</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o szafę
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article id="biuro" class="relative rounded-3xl overflow-hidden grid lg:grid-cols-2 bg-las text-stone-raised on-dark reveal">
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col order-2 lg:order-1">
+        <span class="icon-chip"><i data-lucide="lamp-desk" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble biurowe</h2>
+        <p class="mt-4 text-mist text-lg">Gabinet w domu, biuro w firmie albo kącik do nauki dla dziecka. Robimy meble, które mieszczą sprzęt i dokumenty, a nie tylko dobrze wyglądają.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Biurka na wymiar</li>
+          <li>Regały i półki ścienne</li>
+          <li>Szafy na dokumenty</li>
+          <li>Kontenery z szufladami</li>
+          <li>Lady i zabudowy recepcji</li>
+          <li>Stanowiska do nauki</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o meble biurowe
+          </a>
+        </div>
+      </div>
+      <div class="board-pattern relative min-h-[240px] lg:min-h-full border-b lg:border-b-0 lg:border-l border-white/10 flex items-center justify-center order-1 lg:order-2">
+        <div class="text-center px-8">
+          <i data-lucide="ruler" class="w-12 h-12 mx-auto text-brass-light"></i>
+          <p class="mt-5 font-display font-bold text-xl tracking-tight max-w-xs mx-auto">Każde biurko projektujemy pod konkretną ścianę i sprzęt</p>
+        </div>
+      </div>
+    </article>
+
+    <article id="drewno" class="surface rounded-3xl overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="bg-las relative lg:min-h-[480px]">
+        <img src="images/13.webp" alt="Okrągły stół z drewnianym blatem i białe krzesła" class="w-full h-full object-cover aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0" style="object-position: 50% 55%" loading="lazy">
+      </div>
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col">
+        <span class="icon-chip"><i data-lucide="tree-deciduous" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Meble z drewna naturalnego</h2>
+        <p class="mt-4 text-ink-soft text-lg">Lite drewno ma swój rysunek, ciepło i da się je odnowić po latach. Doradzimy gatunek i wykończenie pasujące do reszty wnętrza.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Stoły i blaty</li>
+          <li>Komody i szafki</li>
+          <li>Półki i regały</li>
+          <li>Drewniane elementy zabudów</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Zapytaj o meble z drewna
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <article id="montaz" class="surface rounded-3xl overflow-hidden grid lg:grid-cols-2 reveal">
+      <div class="p-7 md:p-10 lg:p-12 flex flex-col order-2 lg:order-1">
+        <span class="icon-chip"><i data-lucide="drill" class="w-5 h-5"></i></span>
+        <h2 class="heading-lg mt-6">Projekt i montaż</h2>
+        <p class="mt-4 text-ink-soft text-lg">Nie musisz przychodzić z gotowym projektem. Wystarczy pomysł albo zdjęcie z internetu, resztę dopracujemy razem i zamontujemy u Ciebie.</p>
+        <ul class="check-list mt-6 grid sm:grid-cols-2 gap-x-6 gap-y-2.5">
+          <li>Pomiar w Twoim domu</li>
+          <li>Projekt szafek i układu</li>
+          <li>Dobór frontów, blatów i okuć</li>
+          <li>Wycena przed rozpoczęciem prac</li>
+          <li>Montaż i regulacja frontów</li>
+          <li>Sprzątanie po montażu</li>
+        </ul>
+        <div class="mt-auto pt-8">
+          <a href="tel:781261764" class="btn btn-primary px-6 py-3.5">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            Umów pomiar
+          </a>
+        </div>
+      </div>
+      <div class="bg-las relative lg:min-h-[480px] order-1 lg:order-2">
+        <img src="images/16.webp" alt="Biała kuchnia z czarnym blatem po montażu" class="w-full h-full object-cover aspect-[4/3] lg:aspect-auto lg:absolute lg:inset-0" style="object-position: 50% 60%" loading="lazy">
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="relative bg-las text-stone-raised on-dark py-20 md:py-24 px-5 md:px-8 overflow-hidden">
+  <div class="grain grain-light"></div>
+  <div class="relative max-w-7xl mx-auto grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
+    <div>
+      <h2 class="heading-lg">Masz wymiary albo tylko pomysł? <span class="text-brass-light">Zadzwoń.</span></h2>
+      <p class="mt-5 text-lg text-mist max-w-xl">Odbieramy od poniedziałku do soboty w godzinach 7:00 - 17:00. Pracownia: Malinie 53, 23-305 Malinie.</p>
+    </div>
+    <div class="flex flex-wrap gap-3 lg:justify-end">
+      <a href="tel:781261764" class="btn btn-primary px-7 py-4 text-base">
+        <i data-lucide="phone-call" class="w-5 h-5"></i>
+        781 261 764
+      </a>
+      <a href="index.html#realizacje" class="btn btn-outline-light px-7 py-4 text-base">
+        Zobacz realizacje
+        <i data-lucide="arrow-right" class="w-5 h-5"></i>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-las text-stone-raised on-dark px-5 md:px-8 pt-16 pb-28 md:pb-10 border-t border-white/10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <div class="font-display font-extrabold text-2xl tracking-tight">GRANT-MEBLE</div>
+        <p class="mt-3 text-mist text-sm max-w-xs">Tomasz Maksim. Meble kuchenne, łazienkowe, biurowe, szafy i meble z drewna naturalnego na zamówienie.</p>
+      </div>
+      <div class="text-sm">
+        <div class="text-mist text-xs uppercase tracking-wider font-semibold mb-4">Strona</div>
+        <ul class="space-y-2">
+          <li><a href="uslugi.html" class="nav-link focus-ring">Usługi</a></li>
+          <li><a href="index.html#realizacje" class="nav-link focus-ring">Realizacje</a></li>
+          <li><a href="index.html#opinie" class="nav-link focus-ring">Opinie</a></li>
+          <li><a href="index.html#kontakt" class="nav-link focus-ring">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="text-sm">
+        <div class="text-mist text-xs uppercase tracking-wider font-semibold mb-4">Kontakt</div>
+        <ul class="space-y-2">
+          <li><a href="tel:781261764" class="nav-link focus-ring font-semibold">781 261 764</a></li>
+          <li class="text-mist">Malinie 53, 23-305 Malinie</li>
+          <li class="text-mist">Pn - Sb, 7:00 - 17:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 text-xs text-mist">
+      © 2026 GRANT-MEBLE Tomasz Maksim. Wszelkie prawa zastrzeżone.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE CALL BAR ============ -->
+<div class="call-bar md:hidden fixed bottom-0 left-0 right-0 z-40 bg-las px-4 py-3">
+  <a href="tel:781261764" class="btn btn-primary w-full py-3.5 text-base">
+    <i data-lucide="phone-call" class="w-5 h-5"></i>
+    Zadzwoń: 781 261 764
+  </a>
+</div>
+
+<script>
+  lucide.createIcons();
+
+  const header = document.getElementById('site-header');
+  const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 12);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  const menuBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
+  });
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
